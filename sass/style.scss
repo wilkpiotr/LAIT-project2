@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'mixin';
+@import 'typography';
+@import 'navi';
+@import 'header';
+@import 'base';
+
+
+// font-family: 'Pacifico', cursive;
+// font-family: 'Raleway', sans-serif;
+
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 20%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+

@@ -1,0 +1,26 @@
+.navbar {
+    width: 100%;
+    height: 150px;
+    padding: inherit;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 20%;
+    .image-div {
+        padding-right: 16%;
+    }
+    .navbar-nav {
+        margin-right: 80px;
+        .nav-link {
+            color: $dark-font-color;
+            @extend .f16;
+            @extend .w700;
+            margin: 15px;
+            padding: 0;
+            border-top: 3px solid transparent;
+            &:hover {
+                border-top: 3px solid rgb(255, 96, 51);
+            }
+        }
+    }
+}

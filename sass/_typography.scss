@@ -1,0 +1,30 @@
+.font-families {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+// font sizes
+.f90 { font-size: 5.625rem; }
+.f60 { font-size: 3.75rem; }
+.f50 { font-size: 3.125rem; }
+.f40 { font-size: 2.5rem; }
+.f32 { font-size: 2rem; }
+.f20 { font-size: 1.25rem; }
+.f17 { font-size: 1.0625rem; }
+.f16 { font-size: 1rem; }
+.f15 { font-size: .9375rem; }
+.f13 { font-size: .8125rem; }
+// font-weight
+.w900 { font-weight: $black; }
+.w700 { font-weight: $bold; }
+.w400 { font-weight: $regular; }
+.w300 { font-weight: $light }
+// borders
+.nav-item-hover { border-top: 3px rgb(255, 96, 51); }
+.input-border { border: 1px rgb(38,38,38); }
+.form-item-active { 
+    border-left: 3px rgb(53, 91, 130);
+    background-color: $form-item-active-bgc; 
+}
+
+
+
