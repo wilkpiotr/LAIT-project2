@@ -1,0 +1,25 @@
+.about-us {
+    position: relative;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: $about-us-bgc url('../images/cup.png') no-repeat left center;
+    background-size: 50% 85%;
+    .about-us-container {
+        margin-right: 80px;
+        h1 {
+            @extend .w900;
+            @extend .f90;
+            color: $white-font-color;
+            margin-bottom: 32px;
+        }
+        p {
+            @extend .w300;
+            @extend .f17;
+            color: $white-font-color;
+            margin-bottom: 24px;
+        }
+    }
+}

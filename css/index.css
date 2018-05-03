@@ -2,7 +2,7 @@
   font-family: 'Raleway', sans-serif;
   font-family: 'Pacifico', cursive; }
 
-.f90 {
+.f90, .about-us .about-us-container h1, .our-services .our-service-container h1 {
   font-size: 5.625rem; }
 
 .f60, .header .header-content h2 {
@@ -17,10 +17,10 @@
 .f32 {
   font-size: 2rem; }
 
-.f20, .header .header-content button {
+.f20, .header .header-content button, .our-services .boxes-container .box {
   font-size: 1.25rem; }
 
-.f17, .header .header-content p {
+.f17, .header .header-content p, .about-us .about-us-container p {
   font-size: 1.0625rem; }
 
 .f16, .navbar .navbar-nav .nav-link {
@@ -32,16 +32,16 @@
 .f13 {
   font-size: .8125rem; }
 
-.w900, .header .header-content h2 {
+.w900, .header .header-content h2, .about-us .about-us-container h1, .our-services .our-service-container h1 {
   font-weight: 900; }
 
-.w700, .navbar .navbar-nav .nav-link {
+.w700, .navbar .navbar-nav .nav-link, .our-services .boxes-container .box {
   font-weight: 700; }
 
 .w400 {
   font-weight: 400; }
 
-.w300, .header .header-content p, .header .header-content button {
+.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p {
   font-weight: 300; }
 
 .nav-item-hover {
@@ -61,7 +61,8 @@
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  right: 20%; }
+  right: 20%;
+  z-index: 100; }
   .navbar .image-div {
     padding-right: 16%; }
   .navbar .navbar-nav {
@@ -95,6 +96,58 @@
       background-color: #ff6033;
       padding: 16px 24px;
       box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
+
+.about-us {
+  position: relative;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background: #00b0b0 url("../images/cup.png") no-repeat left center;
+  background-size: 50% 85%; }
+  .about-us .about-us-container {
+    margin-right: 80px; }
+    .about-us .about-us-container h1 {
+      color: white;
+      margin-bottom: 32px; }
+    .about-us .about-us-container p {
+      color: white;
+      margin-bottom: 24px; }
+
+.our-services {
+  position: relative;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #70bfff url("../images/tomato.png") no-repeat calc(80%) center;
+  background-clip: padding-box;
+  padding: 0 80px; }
+  .our-services .boxes-container {
+    padding-right: 50px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    .our-services .boxes-container .box {
+      height: 100px;
+      color: #262626;
+      background-color: white;
+      box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+      margin-bottom: 16px; }
+      .our-services .boxes-container .box .col-sm-10, .our-services .boxes-container .box .col-sm-2 {
+        padding: 10px;
+        text-align: center;
+        margin: 0; }
+      .our-services .boxes-container .box img {
+        width: 55px;
+        height: 55px; }
+      .our-services .boxes-container .box .col-sm-10 {
+        border-right: 2px solid lightgrey; }
+  .our-services .our-service-container h1 {
+    color: white; }
 
 body {
   box-sizing: border-box;

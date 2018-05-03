@@ -3,6 +3,8 @@
 @import 'typography';
 @import 'navi';
 @import 'header';
+@import 'about-us';
+@import 'our-service.scss';
 @import 'base';
 
 
@@ -17,5 +19,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+// .image-item1 {
+//     grid-row: span 2;
+// }
 
 
