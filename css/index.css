@@ -2,7 +2,7 @@
   font-family: 'Raleway', sans-serif;
   font-family: 'Pacifico', cursive; }
 
-.f90, .about-us .about-us-container h1, .our-services .our-service-container h1 {
+.f90, .about-us .about-us-container h1, .our-services .our-service-container h1, .gallery .gallery-div1 h1 {
   font-size: 5.625rem; }
 
 .f60, .header .header-content h2 {
@@ -17,10 +17,10 @@
 .f32 {
   font-size: 2rem; }
 
-.f20, .header .header-content button, .our-services .boxes-container .box {
+.f20, .header .header-content button, .our-services .boxes-container .box, .gallery .gallery-div5 button {
   font-size: 1.25rem; }
 
-.f17, .header .header-content p, .about-us .about-us-container p {
+.f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p {
   font-size: 1.0625rem; }
 
 .f16, .navbar .navbar-nav .nav-link {
@@ -32,16 +32,16 @@
 .f13 {
   font-size: .8125rem; }
 
-.w900, .header .header-content h2, .about-us .about-us-container h1, .our-services .our-service-container h1 {
+.w900, .header .header-content h2 {
   font-weight: 900; }
 
-.w700, .navbar .navbar-nav .nav-link, .our-services .boxes-container .box {
+.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1 {
   font-weight: 700; }
 
 .w400 {
   font-weight: 400; }
 
-.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p {
+.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p, .gallery .gallery-div2 p, .gallery .gallery-div5 button {
   font-weight: 300; }
 
 .nav-item-hover {
@@ -95,7 +95,8 @@
       color: white;
       background-color: #ff6033;
       padding: 16px 24px;
-      box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
+      box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+      border: none; }
 
 .about-us {
   position: relative;
@@ -134,6 +135,10 @@
     .our-services .boxes-container .box {
       height: 100px;
       color: #262626;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
       background-color: white;
       box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
       margin-bottom: 16px; }
@@ -145,9 +150,56 @@
         width: 55px;
         height: 55px; }
       .our-services .boxes-container .box .col-sm-10 {
-        border-right: 2px solid lightgrey; }
+        border-right: 2px solid lightgrey;
+        flex-grow: 1; }
   .our-services .our-service-container h1 {
     color: white; }
+
+.gallery {
+  position: relative;
+  background-color: #ffe92f;
+  margin: 0;
+  padding: 80px 0; }
+  .gallery .gallery-div1 h1 {
+    color: #262626;
+    margin-bottom: 32px;
+    text-align: center; }
+  .gallery .gallery-div2 p {
+    color: #262626;
+    margin-bottom: 48px;
+    text-align: center; }
+  .gallery .gallery-div3 {
+    margin: 0 80px; }
+    .gallery .gallery-div3 .one-huge-img {
+      padding: 0;
+      margin: 0; }
+      .gallery .gallery-div3 .one-huge-img img {
+        width: 621px;
+        height: 432px;
+        margin-bottom: 32px;
+        margin-right: 32px; }
+    .gallery .gallery-div3 .two-small-img {
+      padding: 0;
+      margin: 0; }
+      .gallery .gallery-div3 .two-small-img img {
+        width: 326px;
+        height: 200px;
+        margin-bottom: 32px; }
+  .gallery .gallery-div4 {
+    margin: 0 80px; }
+    .gallery .gallery-div4 .bottom-img {
+      width: 474px;
+      height: 320px;
+      padding: 0;
+      margin-bottom: 32px; }
+      .gallery .gallery-div4 .bottom-img:first-of-type {
+        margin-right: 32px; }
+  .gallery .gallery-div5 button {
+    color: white;
+    background-color: #5585a2;
+    padding: 16px 24px;
+    box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+    border: none; }
 
 body {
   box-sizing: border-box;
