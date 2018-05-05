@@ -1,0 +1,78 @@
+.contact {
+    background: url('../images/contact-bg.jpg') no-repeat left top;
+    background-size: cover;
+    margin: 0;
+    padding: 80px;
+    position: relative;
+    .header-contact {
+        h1 {
+            @extend .w700;
+            @extend .f90;
+            color: $dark-font-color;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+    .p-contact {
+        p {
+            @extend .w300;
+            @extend .f17;
+            color: $dark-font-color;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+    .div-contact {
+        margin: 0;
+        position: relative;
+        form {
+            padding: 0;
+            position: relative;
+            top: 0;
+            left: 0;
+            .form-group {
+                margin: 0;
+                label {
+                    margin: 0;
+                }
+                input, textarea {
+                    display: block;
+                    background-color: $form-item-bgc; 
+                    @extend .w300;
+                    @extend .f15;
+                    font-family: 'Raleway', sans-serif;
+                    color: $white-font-color;
+                    padding: 20px 16px;
+                    border: none;
+                    border-radius: unset;
+                    margin-bottom: 8px;
+                    @include placeholder-color($white-font-color);
+                    &:focus {
+                        @extend .form-item-focus;
+                        @extend .w700;
+                        box-shadow: unset;
+                        transition: unset;
+                    }
+                }
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            margin-top: 24px;
+            li {
+                &:nth-child(odd) {
+                    @extend .w700;
+                    @extend .f17;
+                }
+                &:nth-child(even) {
+                    @extend .w300;
+                    @extend .f20;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}

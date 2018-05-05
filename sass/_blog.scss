@@ -42,7 +42,7 @@
                 @extend .w700;
                 @extend .f32;
                 color: $white-font-color;
-                background: $data-blog-bgc;
+                background: $date-blog-bgc;
                 text-align: center;
                 line-height: 1.2;
                 border-radius: 5px;
@@ -66,7 +66,7 @@
             background-size: cover;
         }
     }
-    .btn-div {
+    .btn-blog {
         button {
             @extend .w300;
             @extend .f20;

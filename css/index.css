@@ -2,7 +2,7 @@
   font-family: 'Raleway', sans-serif;
   font-family: 'Pacifico', cursive; }
 
-.f90, .about-us .about-us-container h1, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .blog .header-blog h1 {
+.f90, .about-us .about-us-container h1, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .blog .header-blog h1, .contact .header-contact h1 {
   font-size: 5.625rem; }
 
 .f60, .header .header-content h2 {
@@ -17,16 +17,19 @@
 .f32, .blog .div-blog-container .div-blog .date {
   font-size: 2rem; }
 
-.f20, .header .header-content button, .our-services .boxes-container .box, .gallery .gallery-div5 button, .subscribe form button, .blog .div-blog-container .div-blog p, .blog .btn-div button {
+.f24, .footer-container .foot-div p:nth-child(2) {
+  font-size: 1.5rem; }
+
+.f20, .header .header-content button, .our-services .boxes-container .box, .gallery .gallery-div5 button, .subscribe form button, .blog .div-blog-container .div-blog p, .blog .btn-blog button, .contact .div-contact ul li:nth-child(even) {
   font-size: 1.25rem; }
 
-.f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p, .subscribe p, .blog .p-blog p {
+.f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p, .subscribe p, .blog .p-blog p, .contact .p-contact p, .contact .div-contact ul li:nth-child(odd) {
   font-size: 1.0625rem; }
 
-.f16, .navbar .navbar-nav .nav-link {
+.f16, .navbar .navbar-nav .nav-link, .footer-container {
   font-size: 1rem; }
 
-.f15 {
+.f15, .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea {
   font-size: .9375rem; }
 
 .f13, .blog .div-blog-container .div-blog footer {
@@ -35,13 +38,13 @@
 .w900, .header .header-content h2 {
   font-weight: 900; }
 
-.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .subscribe h2, .blog .header-blog h1, .blog .div-blog-container .div-blog p, .blog .div-blog-container .div-blog .date {
+.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .subscribe h2, .blog .header-blog h1, .blog .div-blog-container .div-blog p, .blog .div-blog-container .div-blog .date, .contact .header-contact h1, .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus, .contact .div-contact ul li:nth-child(odd), .footer-container .foot-div p span {
   font-weight: 700; }
 
-.w400 {
+.w400, .footer-container .foot-div p:nth-child(2) {
   font-weight: 400; }
 
-.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p, .gallery .gallery-div2 p, .gallery .gallery-div5 button, .subscribe p, .subscribe form button, .blog .p-blog p, .blog .div-blog-container .div-blog footer, .blog .btn-div button {
+.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p, .gallery .gallery-div2 p, .gallery .gallery-div5 button, .subscribe p, .subscribe form button, .blog .p-blog p, .blog .div-blog-container .div-blog footer, .blog .btn-blog button, .contact .p-contact p, .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea, .contact .div-contact ul li:nth-child(even), .footer-container {
   font-weight: 300; }
 
 .nav-item-hover {
@@ -50,9 +53,9 @@
 .input-border, .subscribe form input {
   border: 1px solid #262626; }
 
-.form-item-active {
-  border-left: 3px #355b82;
-  background-color: #00c4c4; }
+.form-item-focus, .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus {
+  border-left: 3px solid #355b82;
+  background-color: rgba(0, 196, 196, 0.5); }
 
 .navbar {
   width: 100%;
@@ -272,12 +275,84 @@
     .blog .div-blog-container .blog-three {
       background: url("../images/blog3.png") no-repeat right;
       background-size: cover; }
-  .blog .btn-div button {
+  .blog .btn-blog button {
     color: white;
     background-color: #f72b3b;
     padding: 16px 24px;
     box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
     border: none; }
+
+.contact {
+  background: url("../images/contact-bg.jpg") no-repeat left top;
+  background-size: cover;
+  margin: 0;
+  padding: 80px;
+  position: relative; }
+  .contact .header-contact h1 {
+    color: #262626;
+    margin-bottom: 32px;
+    text-align: center; }
+  .contact .p-contact p {
+    color: #262626;
+    margin-bottom: 32px;
+    text-align: center; }
+  .contact .div-contact {
+    margin: 0;
+    position: relative; }
+    .contact .div-contact form {
+      padding: 0;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .contact .div-contact form .form-group {
+        margin: 0; }
+        .contact .div-contact form .form-group label {
+          margin: 0; }
+        .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea {
+          display: block;
+          background-color: rgba(111, 212, 208, 0.5);
+          font-family: 'Raleway', sans-serif;
+          color: white;
+          padding: 20px 16px;
+          border: none;
+          border-radius: unset;
+          margin-bottom: 8px; }
+          .contact .div-contact form .form-group input::-webkit-input-placeholder, .contact .div-contact form .form-group textarea::-webkit-input-placeholder {
+            color: white; }
+          .contact .div-contact form .form-group input:-moz-placeholder, .contact .div-contact form .form-group textarea:-moz-placeholder {
+            color: white; }
+          .contact .div-contact form .form-group input::-moz-placeholder, .contact .div-contact form .form-group textarea::-moz-placeholder {
+            color: white; }
+          .contact .div-contact form .form-group input:-ms-input-placeholder, .contact .div-contact form .form-group textarea:-ms-input-placeholder {
+            color: white; }
+          .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus {
+            box-shadow: unset;
+            transition: unset; }
+        .contact .div-contact form .form-group textarea {
+          resize: none; }
+    .contact .div-contact ul {
+      list-style: none;
+      margin-top: 24px; }
+      .contact .div-contact ul li:nth-child(even) {
+        margin-bottom: 16px; }
+
+.footer-container {
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9; }
+  .footer-container .foot-div {
+    margin: 0 80px; }
+    .footer-container .foot-div p {
+      margin-bottom: 0;
+      line-height: 90px; }
+      .footer-container .foot-div p:nth-child(2) {
+        text-align: center;
+        font-family: 'Pacifico', cursive; }
+      .footer-container .foot-div p:nth-child(3) {
+        text-align: right; }
+      .footer-container .foot-div p span {
+        color: #f72b3b; }
 
 body {
   box-sizing: border-box;

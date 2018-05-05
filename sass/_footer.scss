@@ -1,0 +1,28 @@
+.footer-container {
+    background-color: $footer-bgc;
+    margin: 0;
+    padding: 0;
+    @extend .w300;
+    @extend .f16;
+    color: $footer-font-color;
+    .foot-div {
+        margin: 0 80px;
+        p {
+        margin-bottom: 0;
+        line-height: 90px;  
+        &:nth-child(2) {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            @extend .w400;
+            @extend .f24;
+            }
+        &:nth-child(3) {
+            text-align: right;
+            } 
+            span {
+                @extend .w700;
+                color: $footer-span-font-color;
+            }
+        }
+    }
+}
