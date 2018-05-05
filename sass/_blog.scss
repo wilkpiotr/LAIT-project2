@@ -1,0 +1,80 @@
+.blog {
+    position: relative;
+    padding: 80px;
+    background-color: $blog-bgc;
+    .header-blog {
+        h1 {
+            @extend .w700;
+            @extend .f90;
+            color: $white-font-color;
+            margin-bottom: 32px;
+        }
+    }
+    .p-blog {
+        p {
+            @extend .w300;
+            @extend .f17;
+            color: $white-font-color;
+            margin-bottom: 48px;
+            text-align: center;
+        }
+    }
+    .div-blog-container {
+        margin-bottom: 32px;
+        .div-blog {
+            width: 307px;
+            height: 252px;
+            p {
+                @extend .w700;
+                @extend .f20;
+                color: $white-font-color;
+                margin: 0 16px 16px 16px;
+            }
+            footer {
+                @extend .w300;
+                @extend .f13;
+                color: $white-font-color;
+                margin-left: 16px;
+                margin-bottom: 20px;
+            }
+            .date {
+                width: fit-content;
+                @extend .w700;
+                @extend .f32;
+                color: $white-font-color;
+                background: $data-blog-bgc;
+                text-align: center;
+                line-height: 1.2;
+                border-radius: 5px;
+                padding: 3px;
+                margin: 16px;
+                margin-bottom: 48px;
+            }
+        }
+        .blog-one {
+            background: url('../images/blog1.png') no-repeat;
+            background-size: cover;
+            margin-right: 30px;
+        }
+        .blog-two {
+            background: url('../images/blog2.png') no-repeat bottom center;
+            background-size: cover;
+            margin-right: 30px;
+        }
+        .blog-three {
+            background: url('../images/blog3.png') no-repeat right;
+            background-size: cover;
+        }
+    }
+    .btn-div {
+        button {
+            @extend .w300;
+            @extend .f20;
+            color: $white-font-color;
+            background-color: $blog-button-bgc;
+            padding: 16px 24px;
+            box-shadow: $main-shadow;
+            border: none;
+        }
+    }
+} 

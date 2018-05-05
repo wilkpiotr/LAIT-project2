@@ -2,7 +2,7 @@
   font-family: 'Raleway', sans-serif;
   font-family: 'Pacifico', cursive; }
 
-.f90, .about-us .about-us-container h1, .our-services .our-service-container h1, .gallery .gallery-div1 h1 {
+.f90, .about-us .about-us-container h1, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .blog .header-blog h1 {
   font-size: 5.625rem; }
 
 .f60, .header .header-content h2 {
@@ -11,16 +11,16 @@
 .f50 {
   font-size: 3.125rem; }
 
-.f40 {
+.f40, .subscribe h2 {
   font-size: 2.5rem; }
 
-.f32 {
+.f32, .blog .div-blog-container .div-blog .date {
   font-size: 2rem; }
 
-.f20, .header .header-content button, .our-services .boxes-container .box, .gallery .gallery-div5 button {
+.f20, .header .header-content button, .our-services .boxes-container .box, .gallery .gallery-div5 button, .subscribe form button, .blog .div-blog-container .div-blog p, .blog .btn-div button {
   font-size: 1.25rem; }
 
-.f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p {
+.f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p, .subscribe p, .blog .p-blog p {
   font-size: 1.0625rem; }
 
 .f16, .navbar .navbar-nav .nav-link {
@@ -29,26 +29,26 @@
 .f15 {
   font-size: .9375rem; }
 
-.f13 {
+.f13, .blog .div-blog-container .div-blog footer {
   font-size: .8125rem; }
 
 .w900, .header .header-content h2 {
   font-weight: 900; }
 
-.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1 {
+.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .subscribe h2, .blog .header-blog h1, .blog .div-blog-container .div-blog p, .blog .div-blog-container .div-blog .date {
   font-weight: 700; }
 
 .w400 {
   font-weight: 400; }
 
-.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p, .gallery .gallery-div2 p, .gallery .gallery-div5 button {
+.w300, .header .header-content p, .header .header-content button, .about-us .about-us-container p, .gallery .gallery-div2 p, .gallery .gallery-div5 button, .subscribe p, .subscribe form button, .blog .p-blog p, .blog .div-blog-container .div-blog footer, .blog .btn-div button {
   font-weight: 300; }
 
 .nav-item-hover {
   border-top: 3px #ff6033; }
 
-.input-border {
-  border: 1px #262626; }
+.input-border, .subscribe form input {
+  border: 1px solid #262626; }
 
 .form-item-active {
   border-left: 3px #355b82;
@@ -197,6 +197,84 @@
   .gallery .gallery-div5 button {
     color: white;
     background-color: #5585a2;
+    padding: 16px 24px;
+    box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+    border: none; }
+
+.subscribe {
+  position: relative;
+  background: url("../images/sub-bg.jpg") no-repeat right center;
+  margin: 0;
+  padding: 80px; }
+  .subscribe h2 {
+    color: #262626;
+    margin-bottom: 32px;
+    padding: 0; }
+  .subscribe p {
+    color: #262626;
+    margin-bottom: 32px;
+    padding: 0; }
+  .subscribe form {
+    padding: 0; }
+    .subscribe form input {
+      color: #262626;
+      padding: 20px 16px;
+      margin-right: 30px;
+      width: 40%; }
+    .subscribe form button {
+      color: white;
+      background-color: #96b92c;
+      padding: 16px 24px;
+      box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+      border: none; }
+
+.blog {
+  position: relative;
+  padding: 80px;
+  background-color: #b07cf7; }
+  .blog .header-blog h1 {
+    color: white;
+    margin-bottom: 32px; }
+  .blog .p-blog p {
+    color: white;
+    margin-bottom: 48px;
+    text-align: center; }
+  .blog .div-blog-container {
+    margin-bottom: 32px; }
+    .blog .div-blog-container .div-blog {
+      width: 307px;
+      height: 252px; }
+      .blog .div-blog-container .div-blog p {
+        color: white;
+        margin: 0 16px 16px 16px; }
+      .blog .div-blog-container .div-blog footer {
+        color: white;
+        margin-left: 16px;
+        margin-bottom: 20px; }
+      .blog .div-blog-container .div-blog .date {
+        width: fit-content;
+        color: white;
+        background: rgba(86, 92, 101, 0.5);
+        text-align: center;
+        line-height: 1.2;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 16px;
+        margin-bottom: 48px; }
+    .blog .div-blog-container .blog-one {
+      background: url("../images/blog1.png") no-repeat;
+      background-size: cover;
+      margin-right: 30px; }
+    .blog .div-blog-container .blog-two {
+      background: url("../images/blog2.png") no-repeat bottom center;
+      background-size: cover;
+      margin-right: 30px; }
+    .blog .div-blog-container .blog-three {
+      background: url("../images/blog3.png") no-repeat right;
+      background-size: cover; }
+  .blog .btn-div button {
+    color: white;
+    background-color: #f72b3b;
     padding: 16px 24px;
     box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
     border: none; }

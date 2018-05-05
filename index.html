@@ -97,10 +97,10 @@
         
     </section>
 
-    <section class="subscribe">
-        <h2>Subscribe To Us</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque sit nisi dolores, quis magnam.</p>
-        <form action="#">
+    <section class="subscribe d-flex flex-column bd-highlight mb-3">
+        <h2 class="bd-highlight">Subscribe To Us</h2>
+        <p class="bd-highlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Quam cumque sit nisi dolores, quis magnam.</p>
+        <form class="bd-highlight" action="#">
             <label for="subscribe-email"></label>
             <input type="email" id="subscribe-email" placeholder="Your email adress...">
             <button type="submit">SUBSCRIBE</button>
@@ -108,24 +108,35 @@
     </section>
 
     <section class="blog">
-        <h1>Blog</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore explicabo, nulla fugiat repudiandae quia quasi! Expedita praesentium maiores placeat delectus.</p>
-        <div class="div-blog blog-one">
-            <div class="date">20 NOV</div>
-            <p>Green Smoothies: Too Muach of a Good Thing</p>
-            <footer>By Auskteez - 2 hours aga</footer>
+        <div class="header-blog d-flex justify-content-center">
+            <h1>Blog</h1>
         </div>
-        <div class="div-blog blog-two">
-            <div class="date">14 NOV</div>
-            <p>Growing Food and a <blockquote>Thirst</blockquote>for Innovation</p>
-            <footer>By Auskteez - 3 hours aga</footer>
+        
+        <div class="p-blog d-flex justify-content-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Tempore explicabo, nulla fugiat repudiandae quia quasi!<br> Expedita praesentium maiores placeat delectus.</p>
         </div>
-        <div class="div-blog blogt-three">
-            <div class="date">10 NOV</div>
-            <p>Pesticides & Food: What You Need To Know</p>
-            <footer>By Auskteez - 6 hours aga</footer>
+
+        <div class="div-blog-container d-flex justify-content-around">
+            <div class="div-blog blog-one">
+                <div class="date">20<br>NOV</div>
+                <p>Green Smoothies: Too Much of a Good Thing</p>
+                <footer>By Auskteez - 2 hours aga</footer>
+            </div>
+            <div class="div-blog blog-two">
+                <div class="date">14<br>NOV</div>
+                <p>Growing Food and a <q>Thirst</q> for Innovation</p>
+                <footer>By Auskteez - 3 hours aga</footer>
+            </div>
+            <div class="div-blog blog-three">
+                <div class="date">10<br>NOV</div>
+                <p>Pesticides & Food: What You Need To Know</p>
+                <footer>By Auskteez - 6 hours aga</footer>
+            </div>
         </div>
-        <button type="submit">VIEW MORE</button>
+
+        <div class=" btn-div d-flex justify-content-center">
+            <button type="submit">VIEW MORE</button>
+        </div>
     </section>
 
     <section class="contact">

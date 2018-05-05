@@ -1,0 +1,39 @@
+.subscribe {
+    position: relative;
+    background: url('../images/sub-bg.jpg') no-repeat right center;
+    margin: 0;
+    padding: 80px;
+    h2 {
+        @extend .w700;
+        @extend .f40;
+        color: $dark-font-color;
+        margin-bottom: 32px;
+        padding: 0;
+    }
+    p {
+        @extend .w300;
+        @extend .f17;
+        color: $dark-font-color;
+        margin-bottom: 32px;
+        padding: 0;
+    }
+    form {
+        padding: 0;
+        input {
+            @extend .input-border;
+            color: $dark-font-color;
+            padding: 20px 16px;
+            margin-right: 30px;
+            width: 40%;
+        }
+        button {
+            @extend .w300;
+            @extend .f20;
+            color: $white-font-color;
+            background-color: $subscribe-button-bgc;
+            padding: 16px 24px;
+            box-shadow: $main-shadow;
+            border: none;
+        }
+    }
+}
