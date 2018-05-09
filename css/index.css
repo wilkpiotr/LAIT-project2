@@ -26,7 +26,7 @@
 .f17, .header .header-content p, .about-us .about-us-container p, .gallery .gallery-div2 p, .subscribe p, .blog .p-blog p, .contact .p-contact p, .contact .div-contact ul li:nth-child(odd) {
   font-size: 1.0625rem; }
 
-.f16, .navbar .navbar-nav .nav-link, .footer-container {
+.f16, .navbar .collapse .navbar-nav .nav-item .nav-link, .footer-container {
   font-size: 1rem; }
 
 .f15, .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea {
@@ -38,7 +38,7 @@
 .w900, .header .header-content h2 {
   font-weight: 900; }
 
-.w700, .navbar .navbar-nav .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .subscribe h2, .blog .header-blog h1, .blog .div-blog-container .div-blog p, .blog .div-blog-container .div-blog .date, .contact .header-contact h1, .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus, .contact .div-contact ul li:nth-child(odd), .footer-container .foot-div p span {
+.w700, .navbar .collapse .navbar-nav .nav-item .nav-link, .about-us .about-us-container h1, .our-services .boxes-container .box, .our-services .our-service-container h1, .gallery .gallery-div1 h1, .subscribe h2, .blog .header-blog h1, .blog .div-blog-container .div-blog p, .blog .div-blog-container .div-blog .date, .contact .header-contact h1, .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus, .contact .div-contact ul li:nth-child(odd), .footer-container .foot-div p span {
   font-weight: 700; }
 
 .w400, .footer-container .foot-div p:nth-child(2) {
@@ -58,24 +58,22 @@
   background-color: rgba(0, 196, 196, 0.5); }
 
 .navbar {
-  width: 100%;
   height: 150px;
   padding: inherit;
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  right: 20%;
   z-index: 100; }
   .navbar .image-div {
-    padding-right: 16%; }
-  .navbar .navbar-nav {
+    padding-right: 16px; }
+  .navbar .collapse .navbar-nav {
     margin-right: 80px; }
-    .navbar .navbar-nav .nav-link {
+    .navbar .collapse .navbar-nav .nav-item .nav-link {
       color: #262626;
       margin: 15px;
       padding: 0;
       border-top: 3px solid transparent; }
-      .navbar .navbar-nav .nav-link:hover {
+      .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
         border-top: 3px solid #ff6033; }
 
 .header {
@@ -85,7 +83,8 @@
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 165px; }
   .header .header-content {
     margin-left: 80px; }
     .header .header-content h2 {
@@ -357,7 +356,6 @@
 body {
   box-sizing: border-box;
   position: relative;
-  padding: 0 20%;
   font-family: 'Raleway', sans-serif; }
 
 /*# sourceMappingURL=index.css.map */
