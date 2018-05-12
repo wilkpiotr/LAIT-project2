@@ -6,147 +6,198 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 2</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700,900&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <section class="header">  
-            <nav class="container navbar navbar-expand-lg navbar-color">
-                <div class="image-div">
-                    <img src="./images/logo.png" alt="logo">
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                    </ul>
-                    
-                    
-                </div>             
-            </nav>
-            <div class="header-content">
-                <h2>Fresh Life</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatem quaerat quisquam cumque illum debitis,<br> sunt voluptates rem laudantium non sint?</p>
-                <button type="submit">GET FREE NOW</button>
+    <nav class="container fixed-top navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link last-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-header row justify-content-start">
+                <h2 class="col4">Fresh Life</h2>
             </div>
-    </section>
+            <div class="header-p row justify-content-start">
+                <p class="col4">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatem quaerat quisquam cumque illum debitis,<br> sunt voluptates rem laudantium non sint?</p>
+            </div>    
+            <div class="header-button row justify-content-start"> 
+                <button class="col4  mb-5" type="submit">GET FREE NOW</button>
+            </div>
+        </div>
+    </header>
 
     <section class="about-us">
-        <div class="about-us-container">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Dolor totam temporibus excepturi pariatur<br> dolores qui vero fuga.</p><p> Numquam eos unde ad, voluptatem commodi vel deserunt<br> ea temporibus repellendus, obcaecati cum minus ex<br> accusamus distinctio rem recusandae?<br> Eligendi qui omnis enim nihil ipsam hic, corrupti porro?</p>
+        <div class="about-us-content container">
+            <div class="about-us-header row justify-content-end">
+                <h1 class="col-6">About Us</h1>
+            </div>
+            <div class="about-us-p row justify-content-end">
+                <div class="about-us-p col-6">
+                    <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Dolor totam temporibus excepturi pariatur<br> dolores qui vero fuga.</p><p> Numquam eos unde ad, voluptatem commodi vel deserunt<br> ea temporibus repellendus, obcaecati cum minus ex<br> accusamus distinctio rem recusandae?<br> Eligendi qui omnis enim nihil ipsam hic, corrupti porro?</p>
+                </div>
+            </div>
         </div>  
     </section>
 
     <section class="our-services">
-        <div class="boxes-container container">
-            
-                <div class="box row">
-                    <div class="col-sm-10">Online Shopping</div><div class="col-sm-2"><img src="./images/cart.png" alt="cart"></div>
+        <div class="our-services-content container">
+            <div class="our-services-content-row row justify-content-end">
+                <div class="tables-container col-5 align-self-center">           
+                    <table class="table table-light">
+                        <tbody>
+                            <tr class="col-4">
+                                <td class="table-light">Online Shopping</td>
+                                <td class="table-light"><img src="./images/cart.png" alt="cart"></img></td>
+                        </tbody>
+                    </table>
+                    <table class="table table-light">
+                        <tbody>
+                            <tr class="col-4">
+                                <td class="table-light">Quality Product</td>
+                                <td class="table-light"><img src="./images/quality.png" alt="quality"></td>
+                        </tbody>
+                    </table>
+                    <table class="table table-light">
+                        <tbody>
+                            <tr class="col-4">
+                                <td class="table-light">Domestic & International Delivery</td>
+                                <td class="table-light"><img src="./images/world.png" alt="world"></td>
+                        </tbody>
+                    </table>
+                    <table class="table table-light">
+                        <tbody>
+                            <tr class="col-4">
+                                <td class="table-light">Well Organized</td>
+                                <td class="table-light"><img src="./images/carrot.png" alt="carrot"></td>
+                        </tbody>
+                    </table>        
                 </div>
-                
-             
-                <div class="box row">
-                    <div class="col-sm-10">Quality Product</div><div class="col-sm-2"><img src="./images/quality.png" alt="quality"></div>
-                </div>
-            
-                
-                <div class="box row">
-                    <div class="col-sm-10">Domestic & International<br> Delivery</div><div class="col-sm-2"><img src="./images/world.png" alt="world"></div>
-                </div>
-            
-            
-                <div class="box row">
-                    <div class="col-sm-10">Well Organized</div><div class="col-sm-2"><img src="./images/carrot.png" alt="carrot"></div>
-                </div>
-            
-        </div>
-        <div class="our-service-container">
-            <h1>Our Services</h1>
-        </div>
-        
-    </section>
 
-    <section class="gallery container">
-        <div class="gallery-div1 row justify-content-center">
-                <h1 class="col-5">Gallery</h1>
-        </div>
-        <div class="gallery-div2 row justify-content-center">
-                <p class="col-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quis vitae fuga quidem quae architecto dolorem voluptates. Obcaecati, architecto iure?</p>
-        </div>
-        
-        
-        <div class="gallery-div3 row justify-content-center">
-            <div class="one-huge-img col-8">
-                <img src="./images/peach.png" alt="peach">
-            </div>
-            <div class="two-small-img col-4">
-                <img src="./images/berries.png" alt="berries">
-                <img src="./images/blackberries.png" alt="blackberries">
+                <div class="our-service-h1 col-6 align-self-center text-right">
+                    <h1>Our Services</h1>
+                </div>
             </div>
         </div>  
+    </section>
 
-        <div class="gallery-div4 row justify-content-center">  
-            <img class="bottom-img" src="./images/milk.png" alt="milk">
-            <img class="bottom-img" src="./images/pomegranate.png" alt="pomegranate">
+    <section class="gallery">
+        <div class="galery-content container">
+            <div class="gallery-div1 row justify-content-center">
+                    <h1 class="col-5 text-center">Gallery</h1>
+            </div>
+            <div class="gallery-div2 row justify-content-center">
+                    <p class="col-5 text-center mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quis vitae fuga quidem quae architecto dolorem voluptates. Obcaecati, architecto iure?</p>
+            </div>
+            
+            
+            <div class="gallery-div3 row justify-content-end m-0">
+                <div class="one-huge-img col-8">
+                    <img src="./images/peach.png" class="img-fluid" alt="peach">
+                </div>
+                <div class="two-small-img col-4">
+                    <img src="./images/berries.png" class="img-fluid" alt="berries">
+                    <img src="./images/blackberries.png" class="img-fluid" alt="blackberries">
+                </div>
+            </div>  
+
+            <div class="gallery-div4 row justify-content-end">  
+                <div class="bottom-img  col-6 p-0">
+                    <img class="img-fluid first-bottom-img" src="./images/milk.png" alt="milk">
+                </div>
+                <div class="bottom-img col-6 p-0">
+                    <img class="img-fluid second-bottom-img" src="./images/pomegranate.png" alt="pomegranate">
+                </div>
+            </div>
+            <div class="gallery-div5 row justify-content-center" >
+                <button class="col-2" type="submit">VIEW MORE</button>
+            </div>
         </div>
-        <div class="gallery-div5 row justify-content-center" >
-            <button class="col-2" type="submit">VIEW MORE</button>
+    </section>
+
+    <section class="subscribe">
+        <div class="subscribe-content container">
+            <div class="row ">
+                <h2 class="col p-0">Subscribe To Us</h2>
+            </div>
+
+            <div class="row ">
+                <p class="col-7 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quasi nisi minima laborum quia ad veritatis quibusdam explicabo, accusantium nesciunt!</p>
+            </div>
+
+            <form class="form-inline row">
+                <div class="form-group col p-0">
+                    <label for="subscribe-email"></label>
+                    <input type="email" class="form-control col-6" id="subscribe-email" placeholder="Your email adress...">
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </form>
         </div>
+    </section>
+
+    <section class="blog">
+        <div class="blog-content container p-0">
+
+            <div class="header-blog row justify-content-center text-center">
+                <h1 class="col">Blog</h1>
+            </div>
+            
+            <div class="p-blog row justify-content-center text-center">
+                <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Tempore explicabo, nulla fugiat repudiandae quia quasi!<br> Expedita praesentium maiores placeat delectus.</p>
+            </div>
+            
+            <div class="div-blog-container row justify-content-around mx-0">
+                <div class="div-blog blog-one col">
+                    <div class="date">20<br>NOV</div>
+                    <p>Green Smoothies: Too Much of a Good Thing</p>
+                    <footer>By Auskteez - 2 hours aga</footer>
+                </div>
+                <div class="div-blog blog-two col">
+                    <div class="date">14<br>NOV</div>
+                    <p>Growing Food and a <q>Thirst</q> for Innovation</p>
+                    <footer>By Auskteez - 3 hours aga</footer>
+                </div>
+                <div class="div-blog blog-three col">
+                    <div class="date">10<br>NOV</div>
+                    <p>Pesticides & Food: What You Need To Know</p>
+                    <footer>By Auskteez - 6 hours aga</footer>
+                </div>
+            </div>
+            
+            <div class="btn-blog row justify-content-center">
+                <button type="submit">VIEW MORE</button>
+            </div>
+        </div>
+    </section>
         
-    </section>
-
-    <section class="subscribe d-flex flex-column bd-highlight mb-3">
-        <h2 class="bd-highlight">Subscribe To Us</h2>
-        <p class="bd-highlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Quam cumque sit nisi dolores, quis magnam.</p>
-        <form class="bd-highlight" action="#">
-            <label for="subscribe-email"></label>
-            <input type="email" id="subscribe-email" placeholder="Your email adress...">
-            <button type="submit">SUBSCRIBE</button>
-        </form>
-    </section>
-
-    <section class="blog d-flex flex-column">
-        <div class="header-blog d-flex justify-content-center">
-            <h1>Blog</h1>
-        </div>
-        
-        <div class="p-blog d-flex justify-content-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Tempore explicabo, nulla fugiat repudiandae quia quasi!<br> Expedita praesentium maiores placeat delectus.</p>
-        </div>
-
-        <div class="div-blog-container d-flex justify-content-around">
-            <div class="div-blog blog-one">
-                <div class="date">20<br>NOV</div>
-                <p>Green Smoothies: Too Much of a Good Thing</p>
-                <footer>By Auskteez - 2 hours aga</footer>
-            </div>
-            <div class="div-blog blog-two">
-                <div class="date">14<br>NOV</div>
-                <p>Growing Food and a <q>Thirst</q> for Innovation</p>
-                <footer>By Auskteez - 3 hours aga</footer>
-            </div>
-            <div class="div-blog blog-three">
-                <div class="date">10<br>NOV</div>
-                <p>Pesticides & Food: What You Need To Know</p>
-                <footer>By Auskteez - 6 hours aga</footer>
-            </div>
-        </div>
-
-        <div class="btn-blog d-flex justify-content-center">
-            <button type="submit">VIEW MORE</button>
-        </div>
-    </section>
-
     <section class="contact container">
         <div class="header-contact row justify-content-center">
             <h1 class="col-5">Contact</h1>
@@ -197,5 +248,9 @@
             <p class="col-4">Made with <span>love</span> by Auskeetz</p>
         </div>
     </footer>
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

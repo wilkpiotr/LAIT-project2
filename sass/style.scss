@@ -1,16 +1,18 @@
-@import 'variables';
-@import 'mixin';
-@import 'typography';
-@import 'navi';
-@import 'header';
-@import 'about-us';
-@import 'our-service';
-@import 'gallery';
-@import 'subscribe';
-@import 'blog';
-@import 'contact';
-@import 'footer';
-@import 'base';
+@import 'bootstrap/bootstrap.scss';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/typography';
+@import 'elements/header';
+@import 'elements/about-us';
+@import 'elements/our-service';
+@import 'elements/gallery';
+@import 'elements/subscribe';
+@import 'elements/blog';
+@import 'elements/contact';
+@import 'elements/footer';
+@import 'elements/navi';
+@import 'base/base';
+
 
 
 // font-family: 'Pacifico', cursive;

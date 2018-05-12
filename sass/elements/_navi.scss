@@ -1,16 +1,8 @@
 .navbar {
     height: 150px;
-    padding: inherit;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    .image-div {
-        padding-right: 16px;
-    }
+    padding: 0;
     .collapse {
         .navbar-nav {
-            margin-right: 80px;
             .nav-item {
                 .nav-link {
                     color: $dark-font-color;
@@ -19,10 +11,13 @@
                     margin: 15px;
                     padding: 0;
                     border-top: 3px solid transparent;
+                    text-transform: uppercase;
                     &:hover {
                         border-top: 3px solid rgb(255, 96, 51);
                     }
-
+                }
+                .last-link{
+                    margin-right: 0;
                 }
             }
         }

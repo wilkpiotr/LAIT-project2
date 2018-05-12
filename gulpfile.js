@@ -7,7 +7,7 @@ var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function(){
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./sass/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('./css/'))
     .pipe(browserSync.reload({
@@ -24,7 +24,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
-  gulp.watch('./scss/**/*.scss', ['sass']); 
+  gulp.watch('./sass/**/*.scss', ['sass']); 
   gulp.watch('./*.html', browserSync.reload); 
   gulp.watch('./js/**/*.js', browserSync.reload);
 })

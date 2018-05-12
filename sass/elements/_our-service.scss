@@ -1,0 +1,55 @@
+.our-services {
+    min-height: 79vh;
+    background: $our-service-bgc url('../images/tomato.png') no-repeat calc(80%) center;
+    background-clip: padding-box; 
+    padding: 150px 0 170px 0;
+    .our-services-content {
+        .our-services-content-row {
+            .tables-container {
+                margin-right: 80px;
+                table {
+                    tbody {
+                        tr {
+                            height: 100px;
+                            @extend .w700;
+                            @extend .f20;
+                            color: $dark-font-color;
+                            background-color: $white-font-color;
+                            box-shadow: $main-shadow;
+                            margin-bottom: 48px;
+                            td {
+                                text-align: center;
+                                vertical-align: middle;
+                                &:first-child {
+                                    border-right: 1px solid gray;
+                                }
+                                &:last-child {
+                                    width: 25%;
+                                    img {
+                                        width: 55px;
+                                        height: 55px;
+                                    }
+                                }
+                            }
+                                              
+                        }
+                    }
+                }
+                
+            }
+            .our-service-h1 {
+                padding: 0;
+                padding-bottom: 100px;
+                text-align: center;
+                h1 {
+                @extend .w700;
+                @extend .f90;
+                color: $white-font-color;
+                margin-bottom: 0;
+                }   
+            }
+        }
+    }
+    
+   
+}

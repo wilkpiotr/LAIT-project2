@@ -16,14 +16,13 @@
             @extend .f17;
             color: $white-font-color;
             margin-bottom: 48px;
-            text-align: center;
         }
     }
     .div-blog-container {
         margin-bottom: 32px;
         .div-blog {
-            width: 307px;
-            height: 252px;
+            // width: 307px;
+            // height: 252px;
             p {
                 @extend .w700;
                 @extend .f20;

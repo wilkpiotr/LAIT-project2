@@ -1,0 +1,27 @@
+.about-us {
+    position: relative;
+    background: $about-us-bgc url('../images/cup.png') no-repeat calc(25%) center;
+    background-size: 30%;
+    min-height: 70vh;
+    padding: 100px 0 200px 0;
+    .about-us-content {
+        .about-us-header {
+            h1 {
+                @extend .w700;
+                @extend .f90;
+                color: $white-font-color;
+                margin-bottom: 32px;
+            }
+        }
+        .about-us-p {
+            p {
+                display: block;
+                @extend .w300;
+                @extend .f17;
+                color: $white-font-color;
+                margin-bottom: 24px;
+            }
+        }   
+    }
+}
+
