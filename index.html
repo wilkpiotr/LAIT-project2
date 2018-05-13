@@ -175,17 +175,17 @@
             </div>
             
             <div class="div-blog-container row justify-content-around mx-0">
-                <div class="div-blog blog-one col">
+                <div class="div-blog blog-one col p-0">
                     <div class="date">20<br>NOV</div>
                     <p>Green Smoothies: Too Much of a Good Thing</p>
                     <footer>By Auskteez - 2 hours aga</footer>
                 </div>
-                <div class="div-blog blog-two col">
+                <div class="div-blog blog-two col p-0">
                     <div class="date">14<br>NOV</div>
                     <p>Growing Food and a <q>Thirst</q> for Innovation</p>
                     <footer>By Auskteez - 3 hours aga</footer>
                 </div>
-                <div class="div-blog blog-three col">
+                <div class="div-blog blog-three col p-0">
                     <div class="date">10<br>NOV</div>
                     <p>Pesticides & Food: What You Need To Know</p>
                     <footer>By Auskteez - 6 hours aga</footer>
@@ -198,56 +198,60 @@
         </div>
     </section>
         
-    <section class="contact container">
-        <div class="header-contact row justify-content-center">
-            <h1 class="col-5">Contact</h1>
+    <section class="contact">
+        <div class="container p-0">
+            <div class="header-contact row justify-content-center">
+                <h1 class="col text-center">Contact</h1>
+            </div>
+            
+            <div class="p-contact row justify-content-center">
+                <p class="col-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, aperiam.</p>
+            </div>
+
+            <div class="div-contact row justify-content-between">        
+                <form class="col-6 p-0 pr-5" action="#">
+
+                    <div class="form-group">
+                        <label for="name"></label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name..">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email"></label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="Your email..">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel"></label>
+                        <input type="tel" class="form-control" id="tel" placeholder="Your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Your message.."></textarea>
+                    </div>
+                </form>
+                <ul class="col-5 p-0">
+                    <li>ADDRESS</li>
+                    <li>123 Streetname, City, Country</li>
+                    <li>EMAIL</li>
+                    <li>cahee@domain.com</li>
+                    <li>PHONE</li>
+                    <li>+012 345 6789</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="p-contact row justify-content-center">
-            <p class="col-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, aperiam.</p>
-        </div>
-
-        <div class="div-contact row justify-content-around">        
-            <form class="col-6" action="#">
-
-                <div class="form-group">
-                    <label for="name"></label>
-                    <input type="text" class="form-control" id="name" placeholder="Your name..">
-                </div>
-
-                <div class="form-group">
-                    <label for="contact-email"></label>
-                    <input type="email" class="form-control" id="contact-email" placeholder="Your email..">
-                </div>
-
-                <div class="form-group">
-                    <label for="tel"></label>
-                    <input type="tel" class="form-control" id="tel" placeholder="Your phone number">
-                </div>
-                <div class="form-group">
-                    <label for="message"></label>
-                    <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Your message.."></textarea>
-                </div>
-            </form>
-            <ul class="col-5">
-                <li>ADDRESS</li>
-                <li>123 Streetname, City, Country</li>
-                <li>EMAIL</li>
-                <li>cahee@domain.com</li>
-                <li>PHONE</li>
-                <li>+012 345 6789</li>
-            </ul>
-        </div>
-
     </section>
     
-    <footer class="container footer-container">
-        <div class="foot-div row justify-content-between">
-            <p class="col-4">&copy 2015 Company. All right reserved</p>
-            <p class="col-4 cahee">Cahee</p>
-            <p class="col-4">Made with <span>love</span> by Auskeetz</p>
+    <footer class="footer-container">
+        <div class="container p-0">
+            <div class="foot-div row justify-content-between">
+                <p class="col">&copy 2015 Company. All right reserved</p>
+                <p class="col cahee">Cahee</p>
+                <p class="col">Made with <span>love</span> by Auskeetz</p>
+            </div>
         </div>
     </footer>
+
     <script src="js/jquery-slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

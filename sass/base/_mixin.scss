@@ -13,6 +13,12 @@
     }
 }
 
+@mixin box-shadow($box-shadow, $inset-shadow) {
+    -webkit-box-shadow: $box-shadow, $inset-shadow;
+    -moz-box-shadow: $box-shadow, $inset-shadow;
+    box-shadow: $box-shadow, $inset-shadow;
+}
+
 @mixin radius($radius: 50px) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;

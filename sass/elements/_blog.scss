@@ -1,6 +1,6 @@
 .blog {
-    position: relative;
-    padding: 80px;
+    min-height: 55vh;
+    padding: 80px 0;
     background-color: $blog-bgc;
     .header-blog {
         h1 {
@@ -21,20 +21,20 @@
     .div-blog-container {
         margin-bottom: 32px;
         .div-blog {
-            // width: 307px;
-            // height: 252px;
             p {
                 @extend .w700;
                 @extend .f20;
                 color: $white-font-color;
                 margin: 0 16px 16px 16px;
+                @include box-shadow($box-shadow, $inset-shadow);
+                // @include box-shadow($inset-shadow);
             }
             footer {
                 @extend .w300;
                 @extend .f13;
                 color: $white-font-color;
-                margin-left: 16px;
-                margin-bottom: 20px;
+                margin: 16px;
+                @include box-shadow($box-shadow, $inset-shadow);
             }
             .date {
                 width: fit-content;
@@ -46,8 +46,8 @@
                 line-height: 1.2;
                 border-radius: 5px;
                 padding: 3px;
-                margin: 16px;
-                margin-bottom: 48px;
+                margin: 32px;
+                margin-bottom: 96px;
             }
         }
         .blog-one {

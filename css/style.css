@@ -6460,8 +6460,8 @@ a.text-dark:hover, a.text-dark:focus {
     border: none; }
 
 .blog {
-  position: relative;
-  padding: 80px;
+  min-height: 55vh;
+  padding: 80px 0;
   background-color: #b07cf7; }
   .blog .header-blog h1 {
     color: white;
@@ -6473,11 +6473,16 @@ a.text-dark:hover, a.text-dark:focus {
     margin-bottom: 32px; }
     .blog .div-blog-container .div-blog p {
       color: white;
-      margin: 0 16px 16px 16px; }
+      margin: 0 16px 16px 16px;
+      -webkit-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5); }
     .blog .div-blog-container .div-blog footer {
       color: white;
-      margin-left: 16px;
-      margin-bottom: 20px; }
+      margin: 16px;
+      -webkit-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 0.5), inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5); }
     .blog .div-blog-container .div-blog .date {
       width: fit-content;
       color: white;
@@ -6486,8 +6491,8 @@ a.text-dark:hover, a.text-dark:focus {
       line-height: 1.2;
       border-radius: 5px;
       padding: 3px;
-      margin: 16px;
-      margin-bottom: 48px; }
+      margin: 32px;
+      margin-bottom: 96px; }
     .blog .div-blog-container .blog-one {
       background: url("../images/blog1.png") no-repeat;
       background-size: cover;
@@ -6510,7 +6515,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: url("../images/contact-bg.jpg") no-repeat left top;
   background-size: cover;
   margin: 0;
-  padding: 80px;
+  padding: 80px 0;
   position: relative; }
   .contact .header-contact h1 {
     color: #262626;
@@ -6523,37 +6528,32 @@ a.text-dark:hover, a.text-dark:focus {
   .contact .div-contact {
     margin: 0;
     position: relative; }
-    .contact .div-contact form {
-      padding: 0;
-      position: relative;
-      top: 0;
-      left: 0; }
-      .contact .div-contact form .form-group {
+    .contact .div-contact form .form-group {
+      margin: 0; }
+      .contact .div-contact form .form-group label {
         margin: 0; }
-        .contact .div-contact form .form-group label {
-          margin: 0; }
-        .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea {
-          display: block;
-          background-color: rgba(111, 212, 208, 0.5);
-          font-family: 'Raleway', sans-serif;
-          color: white;
-          padding: 20px 16px;
-          border: none;
-          border-radius: unset;
-          margin-bottom: 8px; }
-          .contact .div-contact form .form-group input::-webkit-input-placeholder, .contact .div-contact form .form-group textarea::-webkit-input-placeholder {
-            color: white; }
-          .contact .div-contact form .form-group input:-moz-placeholder, .contact .div-contact form .form-group textarea:-moz-placeholder {
-            color: white; }
-          .contact .div-contact form .form-group input::-moz-placeholder, .contact .div-contact form .form-group textarea::-moz-placeholder {
-            color: white; }
-          .contact .div-contact form .form-group input:-ms-input-placeholder, .contact .div-contact form .form-group textarea:-ms-input-placeholder {
-            color: white; }
-          .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus {
-            box-shadow: unset;
-            transition: unset; }
-        .contact .div-contact form .form-group textarea {
-          resize: none; }
+      .contact .div-contact form .form-group input, .contact .div-contact form .form-group textarea {
+        display: block;
+        background-color: rgba(111, 212, 208, 0.5);
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding: 20px 16px;
+        border: none;
+        border-radius: unset;
+        margin-bottom: 8px; }
+        .contact .div-contact form .form-group input::-webkit-input-placeholder, .contact .div-contact form .form-group textarea::-webkit-input-placeholder {
+          color: white; }
+        .contact .div-contact form .form-group input:-moz-placeholder, .contact .div-contact form .form-group textarea:-moz-placeholder {
+          color: white; }
+        .contact .div-contact form .form-group input::-moz-placeholder, .contact .div-contact form .form-group textarea::-moz-placeholder {
+          color: white; }
+        .contact .div-contact form .form-group input:-ms-input-placeholder, .contact .div-contact form .form-group textarea:-ms-input-placeholder {
+          color: white; }
+        .contact .div-contact form .form-group input:focus, .contact .div-contact form .form-group textarea:focus {
+          box-shadow: unset;
+          transition: unset; }
+      .contact .div-contact form .form-group textarea {
+        resize: none; }
     .contact .div-contact ul {
       list-style: none;
       margin-top: 24px; }
@@ -6565,18 +6565,16 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   padding: 0;
   color: #b9b9b9; }
-  .footer-container .foot-div {
-    margin: 0 80px; }
-    .footer-container .foot-div p {
-      margin-bottom: 0;
-      line-height: 90px; }
-      .footer-container .foot-div p:nth-child(2) {
-        text-align: center;
-        font-family: 'Pacifico', cursive; }
-      .footer-container .foot-div p:nth-child(3) {
-        text-align: right; }
-      .footer-container .foot-div p span {
-        color: #f72b3b; }
+  .footer-container .foot-div p {
+    margin-bottom: 0;
+    line-height: 90px; }
+    .footer-container .foot-div p:nth-child(2) {
+      text-align: center;
+      font-family: 'Pacifico', cursive; }
+    .footer-container .foot-div p:nth-child(3) {
+      text-align: right; }
+    .footer-container .foot-div p span {
+      color: #f72b3b; }
 
 .navbar {
   height: 150px;
