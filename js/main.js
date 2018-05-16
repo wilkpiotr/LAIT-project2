@@ -11,32 +11,45 @@ $(document).ready(function(){
     });
 });
 
-
-$(window).on("scroll",function(){
-    var scrollTop = $(window).scrollTop();
-    if(scrollTop>90){
-        $("#nav-menu").addClass("stick");
-    }else{
-        $("#nav-menu").removeClass("stick");
-    }
+$(document).ready(function(){
+    $('#blog-button').click(function(e){
+        e.preventDefault();
+        if ($('#blog-extra').is(':hidden')) {
+            $('#blog-extra').slideDown(1500);
+            $('#blog-button').text('VIEW LESS');
+        } else if ($('#blog-extra').is(':visible')) {
+            $('#blog-extra').slideUp(1500);
+            $('#blog-button').text('VIEW MORE');
+        }
+    });
 });
 
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
-    var menuList = menu.classList;
-    if(height  > 30) {    
-        //console.log(menu);
-        if(!menuList.contains('scroll')) {
-            menuList.add('scroll');
-            //console.log(menuList);
-        }
-    } else if(height <= 30) {
-        if(menuList.contains('scroll')) {
-            menuList.remove('scroll');
-            //console.log(menuList);
-        }
-    }
-});
+
+// $(window).on("scroll",function(){
+//     var scrollTop = $(window).scrollTop();
+//     if(scrollTop>90){
+//         $("#nav-menu").addClass("stick");
+//     }else{
+//         $("#nav-menu").removeClass("stick");
+//     }
+// });
+
+// $(window).scroll(function() {
+//     var height = $(window).scrollTop();
+//     var menuList = menu.classList;
+//     if(height  > 30) {    
+//         //console.log(menu);
+//         if(!menuList.contains('scroll')) {
+//             menuList.add('scroll');
+//             //console.log(menuList);
+//         }
+//     } else if(height <= 30) {
+//         if(menuList.contains('scroll')) {
+//             menuList.remove('scroll');
+//             //console.log(menuList);
+//         }
+//     }
+// });
 
 
 $('a[href^="#"]').on('click', function(event) {
@@ -48,3 +61,4 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+

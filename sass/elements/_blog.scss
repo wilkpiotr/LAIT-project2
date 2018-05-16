@@ -21,33 +21,42 @@
     .div-blog-container {
         margin-bottom: 32px;
         .div-blog {
-            p {
-                @extend .w700;
-                @extend .f20;
-                color: $white-font-color;
-                margin: 0 16px 16px 16px;
-                @include box-shadow($box-shadow, $inset-shadow);
-                // @include box-shadow($inset-shadow);
-            }
-            footer {
-                @extend .w300;
-                @extend .f13;
-                color: $white-font-color;
-                margin: 16px;
-                @include box-shadow($box-shadow, $inset-shadow);
-            }
-            .date {
-                width: fit-content;
-                @extend .w700;
-                @extend .f32;
-                color: $white-font-color;
-                background: $date-blog-bgc;
-                text-align: center;
-                line-height: 1.2;
-                border-radius: 5px;
-                padding: 3px;
-                margin: 32px;
-                margin-bottom: 96px;
+            .div-blog-small-container {
+                opacity: 0;
+                transition: opacity .5s ease-in-out;
+                .gradient-div {
+                    background: rgba(15,15,15,0);
+                    @include linear-gradient(rgba(15,15,15,0),rgba(15,15,15,0.75), rgba(0,0,0,0.7));
+                    p {
+                        @extend .w700;
+                        @extend .f20;
+                        color: $white-font-color;
+                        margin: 0 16px 16px 16px;
+                    }
+                    footer {
+                        @extend .w300;
+                        @extend .f13;
+                        color: $white-font-color;
+                        padding: 16px;
+                        padding-top: 0;
+                    }
+                    .date {
+                        width: fit-content;
+                        @extend .w700;
+                        @extend .f32;
+                        color: $white-font-color;
+                        background: $date-blog-bgc;
+                        text-align: center;
+                        line-height: 1.2;
+                        border-radius: 5px;
+                        padding: 3px;
+                        margin: 32px;
+                        margin-bottom: 96px;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
         .blog-one {
@@ -75,5 +84,8 @@
             box-shadow: $main-shadow;
             border: none;
         }
+    }
+    #blog-extra {
+        display: none;
     }
 } 

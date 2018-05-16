@@ -69,5 +69,18 @@
                 border: none;
             }
         }
+        #gallery-extra {
+            display: none;
+            margin: 0;
+            padding-bottom: 32px;
+            .bottom-img {
+                max-width: 100%;
+                height: auto;
+            } .first-bottom-img {
+                padding-right: 16px;
+            } .second-bottom-img {
+                padding-left: 16px;
+            }
+        }
     }
 }
