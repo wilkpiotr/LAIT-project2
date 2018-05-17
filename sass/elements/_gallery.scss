@@ -1,16 +1,13 @@
 .gallery {
     min-height: 100vh;
     background-color: $gallery-bgc;
-    margin: 0;
     padding: 100px 0 120px 0;
     .galery-content {
-        padding: 0;
         .gallery-div1 {
             h1 {
                 @extend .w700;
                 @extend .f90;
                 color: $dark-font-color;
-                margin-bottom: 32px;
             }   
         }
         .gallery-div2 {
@@ -21,41 +18,15 @@
             }
         }
         .gallery-div3 {
-            padding-bottom: 32px;
-            
             .one-huge-img {
-                padding: 0;
-                margin: 0;
-                
-                img {
-                    max-width: 100%;
-                    max-height: 100%;      
+                img {   
                     padding-right: 12px;             
                 }
             }
             .two-small-img {
-                padding: 0;
-                margin: 0;
                 img {
-                    max-width: 100%;
-                    height: auto;
                     padding-left: 20px;
-                    &:first-of-type {
-                        padding-bottom: 32px;
-                    }
                 }
-            }
-        }
-        .gallery-div4 {
-            margin: 0;
-            padding-bottom: 32px;
-            .bottom-img {
-                max-width: 100%;
-                height: auto;
-            } .first-bottom-img {
-                padding-right: 16px;
-            } .second-bottom-img {
-                padding-left: 16px;
             }
         }
         .gallery-div5 {
@@ -64,23 +35,11 @@
                 @extend .f20;
                 color: $white-font-color;
                 background-color: $gallery-button-bgc;
-                padding: 16px 24px;
                 box-shadow: $main-shadow;
-                border: none;
             }
         }
         #gallery-extra {
             display: none;
-            margin: 0;
-            padding-bottom: 32px;
-            .bottom-img {
-                max-width: 100%;
-                height: auto;
-            } .first-bottom-img {
-                padding-right: 16px;
-            } .second-bottom-img {
-                padding-left: 16px;
-            }
         }
     }
 }

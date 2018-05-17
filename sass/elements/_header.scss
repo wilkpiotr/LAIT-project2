@@ -9,13 +9,11 @@
         @extend .w900;
         @extend .f60;
         color: $dark-font-color;
-        margin-bottom: 32px;
     }
     p {
         @extend .w300;
         @extend .f17;
         color: $dark-font-color;
-        margin-bottom: 32px;
     }
     .header-button {
         button {
@@ -23,9 +21,9 @@
             @extend .f20;
             color: $white-font-color;
             background-color: $button-header-bgc;
-            padding: 16px 24px;
             box-shadow: $main-shadow;
-            border: none;
+        } &:active, :focus {
+            outline: none;
         }
     }
 }

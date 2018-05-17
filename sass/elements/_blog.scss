@@ -7,7 +7,6 @@
             @extend .w700;
             @extend .f90;
             color: $white-font-color;
-            margin-bottom: 32px;
         }
     }
     .p-blog {
@@ -15,11 +14,9 @@
             @extend .w300;
             @extend .f17;
             color: $white-font-color;
-            margin-bottom: 48px;
         }
     }
     .div-blog-container {
-        margin-bottom: 32px;
         .div-blog {
             .div-blog-small-container {
                 opacity: 0;
@@ -31,14 +28,11 @@
                         @extend .w700;
                         @extend .f20;
                         color: $white-font-color;
-                        margin: 0 16px 16px 16px;
                     }
                     footer {
                         @extend .w300;
                         @extend .f13;
                         color: $white-font-color;
-                        padding: 16px;
-                        padding-top: 0;
                     }
                     .date {
                         width: fit-content;
@@ -46,7 +40,6 @@
                         @extend .f32;
                         color: $white-font-color;
                         background: $date-blog-bgc;
-                        text-align: center;
                         line-height: 1.2;
                         border-radius: 5px;
                         padding: 3px;
@@ -80,9 +73,10 @@
             @extend .f20;
             color: $white-font-color;
             background-color: $blog-button-bgc;
-            padding: 16px 24px;
             box-shadow: $main-shadow;
             border: none;
+        } &:focus {
+            outline: none;
         }
     }
     #blog-extra {

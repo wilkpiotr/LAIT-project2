@@ -1,6 +1,5 @@
 .navbar {
     height: 150px;
-    padding: 0;
     .collapse {
         .navbar-nav {
             .nav-item {
@@ -8,16 +7,10 @@
                     color: $dark-font-color;
                     @extend .f16;
                     @extend .w700;
-                    margin: 15px;
-                    padding: 0;
                     border-top: 3px solid transparent;
-                    text-transform: uppercase;
                     &:hover {
                         border-top: 3px solid rgb(255, 96, 51);
                     }
-                }
-                .last-link{
-                    margin-right: 0;
                 }
             }
         }

@@ -10,16 +10,13 @@
                 table {
                     tbody {
                         tr {
-                            height: 100px;
-                            @extend .w700;
-                            @extend .f20;
-                            color: $dark-font-color;
-                            background-color: $white-font-color;
-                            box-shadow: $main-shadow;
-                            margin-bottom: 48px;
                             td {
-                                text-align: center;
-                                vertical-align: middle;
+                                height: 100px;
+                                @extend .w700;
+                                @extend .f20;
+                                color: $dark-font-color;
+                                background-color: $white-font-color;
+                                box-shadow: $main-shadow;
                                 &:first-child {
                                     border-right: 1px solid gray;
                                 }
@@ -40,7 +37,6 @@
             .our-service-h1 {
                 padding: 0;
                 padding-bottom: 100px;
-                text-align: center;
                 h1 {
                 @extend .w700;
                 @extend .f90;
