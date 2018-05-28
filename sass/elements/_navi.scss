@@ -1,5 +1,6 @@
 .navbar {
     height: 150px;
+    transition: height 1s ease-out;
     .collapse {
         .navbar-nav {
             .nav-item {
@@ -15,4 +16,8 @@
             }
         }
     }
+}
+.stick {
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    height: 75px;
 }

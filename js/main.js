@@ -25,14 +25,14 @@ $(document).ready(function(){
 });
 
 
-// $(window).on("scroll",function(){
-//     var scrollTop = $(window).scrollTop();
-//     if(scrollTop>90){
-//         $("#nav-menu").addClass("stick");
-//     }else{
-//         $("#nav-menu").removeClass("stick");
-//     }
-// });
+$(window).on("scroll",function(){
+    var scrollTop = $(window).scrollTop();
+    if(scrollTop>90){
+        $("#nav-menu").addClass("stick");
+    }else{
+        $("#nav-menu").removeClass("stick");
+    }
+});
 
 // $(window).scroll(function() {
 //     var height = $(window).scrollTop();
